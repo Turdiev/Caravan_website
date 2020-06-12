@@ -34,6 +34,26 @@
   }
 }
 
+@mixin button_main {
+  border-radius: 5px;
+  background-color: #fff;
+  width: 170px;
+  height: 43px;
+  color: #4d4d57;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+@mixin button_hover {
+    &:hover{
+      background-color: #ff6401;
+      color: #fff;
+      transition: 0.7s;
+    }
+}
 /* Fonts Helpers:
    Read more: https://github.com/vedees/webpack-template/blob/master/README.md#add-fonts
    ========================================================================== */
@@ -82,7 +102,6 @@
 
 // For Modern format fonts + .svg
 // Files Required: .woff, .woffs, .svg
-
 
 // @mixin font-face(
 //   $font-family,
