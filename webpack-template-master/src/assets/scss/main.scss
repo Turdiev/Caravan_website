@@ -833,6 +833,55 @@ a {
     font-weight: 600;
   }
 }
+/*Products END*/
+/*BANNER*/
+.banner{
+  position: relative;
+  top: 1131px;
+  left: 0px;
+  width: 1091px;
+  height: 259px;
+  background-color: #767676;
+  background: url("/assets/img/banner.png") 1144px 300px;
+  border-radius: 11px;
+}
+
+.banner_title{
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: absolute;
+  left: 32px;
+  top: 49px;
+  letter-spacing: -1px;
+  word-spacing: 1.3px;
+  width: 644px;
+}
+.banner_text{
+    font-size: 13px;
+    color: #686865;
+    line-height: 1.2;
+    position: absolute;
+    left: 33px;
+    top: 126px;
+    width: 559px;
+    height: 51px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+.banner_price{
+  font-size: 24px;
+  color: #ff6401;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: absolute;
+  left: 32px;
+  top: 197px;
+}
 
 // Modules:
 // example: @import "modules/my-module.scss";
