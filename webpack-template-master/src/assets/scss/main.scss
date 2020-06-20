@@ -883,5 +883,109 @@ a {
   top: 197px;
 }
 
+/*BANNER END*/
+/*SUPPLIERS*/
+.suppliers{
+
+}
+
+.suppliers_head{
+    font-size: 21px;
+    color: rgb(51, 52, 63);
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    left: 95px;
+    top: 1165px;
+    letter-spacing: -0.2px;
+    word-spacing: 1px; 
+}
+
+.suppliers_watch_all{
+    font-size: 11px;
+    color: rgb(45, 44, 52);
+    line-height: 1.2;
+    position: absolute;
+    right: 116px;
+    top: 1176px;
+    letter-spacing: 0.1px;
+    word-spacing: 0px;
+}
+.watch_all_img{
+  position: absolute;
+  right: -19px;
+  top: 3px;
+  width: 4px;
+  height: 10px;
+}
+.suppliers_block{
+  position: relative;
+  float: left;
+  width: 158px;
+  height: 140px;
+  background-color: #fff;
+  margin: 0 28px 28px 0;
+  top: 670px;
+  border-radius: 3px;
+}
+.suppliers_logo{
+  @include suppliers_logo;
+}
+
+.arniro{
+  @include suppliers_logo;
+  background: url("/assets/img/ARNIRO.png") no-repeat ;
+  background-size: 90px 16px;
+  background-position-x: 52%;
+  background-position-y: 51%;
+  background-color: #20243a;
+}
+.aliya{
+  @include suppliers_logo;
+  background: url("/assets/img/logo-Aliya.png") no-repeat ;
+  background-size: 158px 90px;
+  background-position-x: 52%;
+  background-position-y: 51%;
+  background-color: #20243a;
+}
+
+.red_mouse{
+  @include suppliers_logo;
+  background: url("/assets/img/RED MOUSE.png") no-repeat ;
+  background-size: 89px 45px;
+  background-position-x: 49%;
+  background-position-y: 51%;
+  background-color: #e73232;
+}
+
+.bird{
+  @include suppliers_logo;
+  background: url("/assets/img/suppliers6.png") no-repeat ;
+  background-size: 120px 19px;
+  background-position-x: 53%;
+  background-position-y: 50%;
+  background-color: #000;
+}
+.suppliers_title{
+    font-size: 13px;
+    color: rgb(48, 48, 48);
+    line-height: 1.2;
+    position: absolute;
+    left: 1px;
+    top: 103px;
+    letter-spacing: 0.1px;
+    word-spacing: -1px;
+}
+.suppliers_link{
+    font-size: 9px;
+    color: rgb(178, 178, 178);
+    text-decoration: underline;
+    line-height: 1.2;
+    position: absolute;
+    left: 3px;
+    top: 124px;
+    letter-spacing: 0.4px;
+    word-spacing: 0px;
+}
 // Modules:
 // example: @import "modules/my-module.scss";
