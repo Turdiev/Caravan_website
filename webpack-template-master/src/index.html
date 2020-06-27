@@ -9,18 +9,28 @@
 </head>
 
 <body>
-
+  <!--Header-->
   <header class="header">
     <div class="header-menu_one">
       <div class="container">
-        <nav class="nav">
-          <a href="#" class="nav-link">Новинки</a>
-          <a href="#" class="nav-link">Лидеры продаж</a>
-          <a href="#" class="nav-link">Кредит</a>
-          <a href="#" class="nav-link">Продавай</a>
-          <a href="#" class="nav-link">Все продавцы</a>
-          <a href="#" class="nav-link">Контакты</a>
-        </nav>
+        <div class="">
+          <nav class="text-xs nav">
+            <a href="#" class="nav-link">Новинки</a>
+            <a href="#" class="nav-link">Лидеры продаж</a>
+            <a href="#" class="nav-link">Кредит</a>
+            <a href="#" class="nav-link">Продавай</a>
+            <a href="#" class="nav-link">Все продавцы</a>
+            <a href="#" class="nav-link">Контакты</a>
+          </nav>
+          <div class="authorization">
+            <div class="register">
+              <a href="#" class="text-xs font-semibold text-gray-900 mr-3">Регистрация</a>
+            </div>
+            <div class="login">
+              <a href="#" class="text-xs font-semibold text-gray-900 mr-3">Вход</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="header-menu_two">
@@ -43,10 +53,25 @@
             <li><a class="menu__item" href="#">Бренды</a></li>
           </ul>
         </div>
+        <div class="elements">
+          <div class="search">
+            <button class="search_button w-full h-full bg-orange-600">
+              <img src="./assets/img/search.png" alt="" class="search_icon">
+            </button>
+          </div>
+          <div class="box_basket bg-red-100 px-3">
+            <button class="button_basket">
+              <img src="./assets/img/like_icon.png" alt="">
+            </button>
+            <a href="" class="link_basket">
+              <img src="./assets/img/basket_icon.png" alt="">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-
+  <!--Sliader-->
   <section class="all">
     <input checked type="radio" name="respond" id="desktop">
     <article class="header_slider">
@@ -104,7 +129,9 @@
 
     </article>
   </section>
+  <!--Compilation-->
   <section>
+
     <div class="container">
       <div class="compilation_all w-auto h-64">
         <div class="compilation_1">
@@ -144,137 +171,194 @@
         </div>
       </div>
   </section>
+  <!--Products-->
   <section>
     <div class="container">
-      <div class="products_head">
-        <div class="title_products"><span>Обновление в нашем Караване</span></div>
-        <div class="box_menu">
-          <ul class="menu__box_prodects">
-            <li><a class="menu__item1" href="#">Со скидками</a></li>
-            <li><a class="menu__item1" href="#">Одежда</a></li>
-            <li><a class="menu__item1" href="#">Лето</a></li>
-            <li><a class="menu__item1" href="#">Горы</a></li>
-            <li><a class="menu__item1" href="#">Для авто</a></li>
-            <li><a class="menu__item1" href="#">Спорт</a></li>
-          </ul>
+      <div class="products_all">
+        <div class="products_head">
+          <div class="title_products"><span>Обновление в нашем Караване</span></div>
+          <div class="box_menu">
+            <ul class="menu__box_prodects">
+              <li><a class="menu__item1" href="#">Со скидками</a></li>
+              <li><a class="menu__item1" href="#">Одежда</a></li>
+              <li><a class="menu__item1" href="#">Лето</a></li>
+              <li><a class="menu__item1" href="#">Горы</a></li>
+              <li><a class="menu__item1" href="#">Для авто</a></li>
+              <li><a class="menu__item1" href="#">Спорт</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="products_block_one">
-        <div class="products_block">
-          <div class="products_item1">
-            <div class="rectangles_new">
-              <span class="new">Новинка</span>
+        <div class="products_block_one">
+          <div class="products_block">
+            <div class="products_item1">
+              <div class="rectangles_new">
+                <span class="new">Новинка</span>
+              </div>
+              <div class="rectangles_discount">
+                <span class="discount">Скидка</span>
+              </div>
+              <a href="">
+                <img src="./assets/img/products_block1.png" alt="" class="products_image">
+                <h4 class="products_type">Мужская куртка</h4>
+                <p class="products_text">Синяя джинсовая куртка с эффектом
+                  брызг краски Good For Nothing</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">40.95</span><span
+                  class="price_new">32.95</span></span>
+              <a href=""><span class="arni_store">Arniro.store</span></a>
+              <div class="products_like bg-red-100 px-3 ">
+                <button class="button_like">
+                  <img src="./assets/img/like_icon.png" alt="">
+                </button>
+              </div>
             </div>
-            <div class="rectangles_discount">
-              <span class="discount">Скидка</span>
+          </div>
+          <div class="products_block">
+            <div class="products_item2">
+              <a href="">
+                <img src="./assets/img/products_block2.png" alt="" class="products_image">
+                <h4 class="products_type">Свитшот</h4>
+                <p class="products_text">Серый свитшот с неоновым
+                  логотипом Sixth June</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">40.95</span><span
+                  class="price_new">32.95</span></span>
+              <a href=""><span class="arni_store">Arniro.store</span></a>
+              <div class="products_like bg-red-100 px-3 ">
+                <button class="button_like">
+                  <img src="./assets/img/like_icon.png" alt="">
+                </button>
+              </div>
             </div>
-            <img src="./assets/img/products_block1.png" alt="" class="products_image">
-            <h4 class="products_type">Мужская куртка</h4>
-            <p class="products_text">Синяя джинсовая куртка с эффектом
-              брызг краски Good For Nothing</p>
-            <span class="products_price">USD <span class="price_old">40.95</span><span
-                class="price_new">32.95</span></span>
-            <span class="arni_store">Arniro.store</span>
           </div>
-        </div>
-        <div class="products_block">
-          <div class="products_item2">
-            <img src="./assets/img/products_block2.png" alt="" class="products_image">
-            <h4 class="products_type">Свитшот</h4>
-            <p class="products_text">Серый свитшот с неоновым
-              логотипом Sixth June</p>
-            <span class="products_price">USD <span class="price_old">40.95</span><span
-                class="price_new">32.95</span></span>
-            <span class="arni_store">Arniro.store</span>
-          </div>
-        </div>
-        <div class="products_block">
-          <div class="products_item3">
-            <div class="rectangles_new">
-              <span class="new">Новинка</span>
+          <div class="products_block">
+            <div class="products_item3">
+              <div class="rectangles_new">
+                <span class="new">Новинка</span>
+              </div>
+              <a href="">
+                <img src="./assets/img/products_block3.png" alt="" class="products_image">
+                <h4 class="products_type">Аксессуары</h4>
+                <p class="products_text">Золотистое ярусное ожерелье с
+                  подвеской DesignB London</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">10.95</span><span
+                  class="price_new">5.00</span></span>
+              <a href=""><span class="arni_store">Arniro.store</span></a>
+              <div class="products_like bg-red-100 px-3 ">
+                <button class="button_like">
+                  <img src="./assets/img/like_icon.png" alt="">
+                </button>
+              </div>
             </div>
-            <img src="./assets/img/products_block3.png" alt="" class="products_image">
-            <h4 class="products_type">Аксессуары</h4>
-            <p class="products_text">Золотистое ярусное ожерелье с
-              подвеской DesignB London</p>
-            <span class="products_price">USD <span class="price_old">10.95</span><span
-                class="price_new">5.00</span></span>
-            <span class="arni_store">Arniro.store</span>
           </div>
-        </div>
-        <div class="products_block">
-          <div class="products_item4"></div>
-          <div class="rectangles_hit">
-            <span class="hit">Хит</span>
-          </div>
-          <img src="./assets/img/products_block4.png" alt="" class="products_image">
-          <h4 class="products_type">Крема</h4>
-          <p class="products_text">Дорожный набор средств по уходу
-            за кожей лица Cowshed Little Face...</p>
-          <span class="products_price">USD <span class="price_old">21.00</span><span
-              class="price_new">15.00</span></span>
-          <span class="arni_store">Arniro.store</span>
-        </div>
-      </div>
-      <div class="products_block_two">
-        <div class="products_block">
-          <div class="products_item1">
-            <div class="rectangles_discount">
-              <span class="discount">Скидка</span>
-            </div>
-            <img src="./assets/img/products_block5.png" alt="" class="products_image">
-            <h4 class="products_type">Джинсы</h4>
-            <p class="products_text">Узкие джинсы со средним эффектом
-              поношенности G-Star 3301</p>
-            <span class="products_price">USD <span class="price_old">40.95</span><span
-                class="price_new">38.15</span></span>
-            <span class="arni_store">Arniro.store</span>
-          </div>
-        </div>
-        <div class="products_block">
-          <div class="products_item2">
-            <img src="./assets/img/products_block6.png" alt="" class="products_image">
-            <h4 class="products_type">Женская обувь</h4>
-            <p class="products_text">Кожаные светло-коричневые туфли
-              на плоской подошве ASOS DESIGN</p>
-            <span class="products_price">USD <span class="price_old">40.95</span><span
-                class="price_new">32.95</span></span>
-            <span class="arni_store">Arniro.store</span>
-          </div>
-        </div>
-        <div class="products_block">
-          <div class="products_item3">
+          <div class="products_block">
+            <div class="products_item4"></div>
             <div class="rectangles_hit">
               <span class="hit">Хит</span>
             </div>
-            <img src="./assets/img/products_block7.png" alt="" class="products_image">
-            <h4 class="products_type">Женская футболка</h4>
-            <p class="products_text">Черное свободное платье-футболка
-              с логотипом-галочкой Nike</p>
-            <span class="products_price">USD <span class="price_old">20.40</span><span
-                class="price_new">35.00</span></span>
-            <span class="arni_store">Arniro.store</span>
+            <a href="">
+              <img src="./assets/img/products_block4.png" alt="" class="products_image">
+              <h4 class="products_type">Крема</h4>
+              <p class="products_text">Дорожный набор средств по уходу
+                за кожей лица Cowshed Little Face...</p>
+            </a>
+            <span class="products_price">USD <span class="price_old">21.00</span><span
+                class="price_new">15.00</span></span>
+            <a href=""><span class="arni_store">Arniro.store</span></a>
+            <div class="products_like bg-red-100 px-3 ">
+              <button class="button_like">
+                <img src="./assets/img/like_icon.png" alt="">
+              </button>
+            </div>
           </div>
         </div>
-        <div class="products_block">
-          <div class="products_item4"></div>
-          <img src="./assets/img/products_block8.png" alt="" class="products_image">
-          <h4 class="products_type">Аксессуары</h4>
-          <p class="products_text">Черные солнцезащитные очки в
-            крупной оправе River Island</p>
-          <span class="products_price">USD <span class="price_old">21.00</span><span
-              class="price_new">15.00</span></span>
-          <span class="arni_store">Arniro.store</span>
+        <div class="products_block_two">
+          <div class="products_block">
+            <div class="products_item1">
+              <div class="rectangles_discount">
+                <span class="discount">Скидка</span>
+              </div>
+              <a href=""><img src="./assets/img/products_block5.png" alt="" class="products_image">
+                <h4 class="products_type">Джинсы</h4>
+                <p class="products_text">Узкие джинсы со средним эффектом
+                  поношенности G-Star 3301</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">40.95</span><span
+                  class="price_new">38.15</span></span>
+              <a href=""><span class="arni_store">Arniro.store</span></a>
+              <div class="products_like bg-red-100 px-3 ">
+                <button class="button_like">
+                  <img src="./assets/img/like_icon.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="products_block">
+            <div class="products_item2">
+              <a href=""><img src="./assets/img/products_block6.png" alt="" class="products_image">
+                <h4 class="products_type">Женская обувь</h4>
+                <p class="products_text">Кожаные светло-коричневые туфли
+                  на плоской подошве ASOS DESIGN</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">40.95</span><span
+                  class="price_new">32.95</span></span>
+              <a href=""><span class="arni_store">Arniro.store</span></a>
+              <div class="products_like bg-red-100 px-3 ">
+                <button class="button_like">
+                  <img src="./assets/img/like_icon.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="products_block">
+            <div class="products_item3">
+              <div class="rectangles_hit">
+                <span class="hit">Хит</span>
+              </div>
+              <a href=""><img src="./assets/img/products_block7.png" alt="" class="products_image">
+                <h4 class="products_type">Женская футболка</h4>
+                <p class="products_text">Черное свободное платье-футболка
+                  с логотипом-галочкой Nike</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">20.40</span><span
+                  class="price_new">35.00</span></span>
+              <a href=""><span class="arni_store">Arniro.store</span></a>
+              <div class="products_like bg-red-100 px-3 ">
+                <button class="button_like">
+                  <img src="./assets/img/like_icon.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="products_block">
+            <div class="products_item4"></div>
+            <a href="">
+              <img src="./assets/img/products_block8.png" alt="" class="products_image">
+              <h4 class="products_type">Аксессуары</h4>
+              <p class="products_text">Черные солнцезащитные очки в
+                крупной оправе River Island</p>
+            </a>
+            <span class="products_price">USD <span class="price_old">21.00</span><span
+                class="price_new">15.00</span></span>
+            <a href=""><span class="arni_store">Arniro.store</span></a>
+            <div class="products_like bg-red-100 px-3 ">
+              <button class="button_like">
+                <img src="./assets/img/like_icon.png" alt="">
+              </button>
+            </div>
+          </div>
         </div>
+        <span class="next">Вы просмотрели 8 из 1 069 товаров</span>
+        <a href="#">
+          <div class="button_Load_more">
+            <div class="Load_more">Загрузить еще +</div>
+          </div>
+        </a>
       </div>
-      <span class="next">Вы просмотрели 8 из 1 069 товаров</span>
-      <a href="#">
-        <div class="button_Load_more">
-          <div class="Load_more">Загрузить еще +</div>
-        </div>
-      </a>
     </div>
   </section>
+  <!--Banner-->
   <section>
     <div class="container">
       <div class="banner">
@@ -288,64 +372,146 @@
       </div>
     </div>
   </section>
+  <!--Suppliers-->
   <section>
+
     <div class="container">
-      <h2 class="suppliers_head">Поставщики нашего Каравана</h2>
-      <a href="#" class="suppliers_watch_all">Смотреть всех
-        <img src="./assets/img/watch_all.png" class="watch_all_img">
-      </a>
       <div class="suppliers">
-        <div class="suppliers_block">
-          <div class="suppliers_logo"></div>
-          <div class="suppliers_title ">KirillSpace MC</div>
-          <div class="suppliers_link">Nosorog</div>
+        <div class="suppliers_head">
+          <h2 class="suppliers_head_title">Поставщики нашего Каравана</h2>
+          <a href="#" class="suppliers_watch_all">Смотреть всех
+            <img src="./assets/img/watch_all.png" class="watch_all_img">
+          </a>
         </div>
-        <div class="suppliers_block ">
-          <div class="suppliers_logo arniro"></div>
-          <div class="suppliers_title suppliers_title">Nikita Nischuk</div>
-          <div class="suppliers_link">Arniro.oi</div>
-        </div>
-        <div class="suppliers_block">
-          <div class="suppliers_logo aliya"></div>
-          <div class="suppliers_title suppliers_title">Aliya furs</div>
-          <div class="suppliers_link">Aliya.kg</div>
-        </div>
-        <div class="suppliers_block">
-          <div class="suppliers_logo"></div>
-          <div class="suppliers_title suppliers_title">Slava COCO</div>
-          <div class="suppliers_link">Dordoi 105/7</div>
-        </div>
-        <div class="suppliers_block">
-          <div class="suppliers_logo red_mouse"></div>
-          <div class="suppliers_title suppliers_title">Nurs Komarov</div>
-          <div class="suppliers_link">Redmouse.pro</div>
-        </div>
-        <div class="suppliers_block">
-          <div class="suppliers_logo bird"></div>
-          <div class="suppliers_title suppliers_title">Blvckbird</div>
-          <div class="suppliers_link">Blvckbird.pro</div>
-        </div>
+        <a href="">
+          <div class="suppliers_block">
+            <div class="suppliers_logo"></div>
+            <div class="suppliers_title ">KirillSpace MC</div>
+            <div class="suppliers_link">Nosorog</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="suppliers_block ">
+            <div class="suppliers_logo arniro"></div>
+            <div class="suppliers_title suppliers_title">Nikita Nischuk</div>
+            <div class="suppliers_link">Arniro.oi</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="suppliers_block">
+            <div class="suppliers_logo aliya"></div>
+            <div class="suppliers_title suppliers_title">Aliya furs</div>
+            <div class="suppliers_link">Aliya.kg</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="suppliers_block">
+            <div class="suppliers_logo"></div>
+            <div class="suppliers_title suppliers_title">Slava COCO</div>
+            <div class="suppliers_link">Dordoi 105/7</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="suppliers_block">
+            <div class="suppliers_logo red_mouse"></div>
+            <div class="suppliers_title suppliers_title">Nurs Komarov</div>
+            <div class="suppliers_link">Redmouse.pro</div>
+          </div>
+        </a>
+        <a href="">
+          <div class="suppliers_block">
+            <div class="suppliers_logo bird"></div>
+            <div class="suppliers_title suppliers_title">Blvckbird</div>
+            <div class="suppliers_link">Blvckbird.pro</div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
+  <!--Form-->
   <section>
     <div class="container">
-      <div class="sub_box">
-        <h2 class="sub_title">Рассылка</h2>
-        <p class="sub_text">Подпишись на рассылку и получай уведомления о скидках!</p>
-        <form class="mainform">
-          <p class="email">
-            <input type="text" name="email" class="expanded" placeholder="Example@gmail.com" />
-            <label for="email"></label>
-          </p>
-          <p class="button_send">
-            <input type="submit" class="send" value="Подписаться" />
-          </p>
-        </form>
+      <div class="sub">
+        <div class="sub_box">
+          <h2 class="sub_title">Рассылка</h2>
+          <p class="sub_text">Подпишись на рассылку и получай уведомления о скидках!</p>
+          <form class="mainform">
+            <p class="email">
+              <input type="text" name="email" class="expanded" placeholder="Example@gmail.com" />
+              <label for="email"></label>
+            </p>
+            <p class="button_send">
+              <input type="submit" class="send" value="Подписаться" />
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
-  <footer></footer>
+  <!--Footer-->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="service">
+          <h2 class="footer_title ">Сервис и поддержка</h2>
+          <a href="" class="footer_link link1"> Как сделать заказ</a>
+          <a href="" class="footer_link link2">Способы оплаты</a>
+          <a href="" class="footer_link link3">Доставка</a>
+          <a href="" class="footer_link link4">Возврат денежных средств</a>
+          <a href="" class="footer_link link5">Вопросы и ответы</a>
+          <a href="" class="footer_link link6">Скидочные товары</a>
+        </div>
+        <div class="all_caravan">
+          <h2 class="footer_title ">Вместе с караваном</h2>
+          <a href="" class="footer_link link1">О компании</a>
+          <a href="" class="footer_link link2">Правила размещения</a>
+          <a href="" class="footer_link link3">Поставщики</a>
+          <a href="" class="footer_link link4">Скидочные товарты</a>
+          <a href="" class="footer_link link5">Акции</a>
+          <a href="" class="footer_link link6">Товарные категории</a>
+        </div>
+        <div class="footer_logo">
+          <img src="./assets/img/footer_logo.png" alt="" class="footer_img">
+        </div>
+        <div class="contact">
+          <h2 class="footer_title ">Контакты</h2>
+          <p class="footer_text link1">Адрес: <span>г.Бишкек, ул. Донецкая 10/1
+              первый этаж</span></p>
+          <p class="footer_text link2">Телефон: <span>+996 (555) 300 - 555
+              +996 (700) 300 - 555
+              +996 (777) 300 - 555</span></p>
+          <p class="footer_text link3">E-mail <span>Opencaravan@caravan.kg
+              Helpcenter@caravan.kg</span></p>
+        </div>
+        <div class="social_network">
+          <h2 class="footer_title ">Мы в соц сетях</h2>
+          <a href="" class="footer_link link1">Instagram</a>
+          <a href="" class="footer_link link2">Facebook</a>
+          <a href="" class="footer_link link3">Whatsapp</a>
+          <a href="#">
+            <div class="button_social">
+              <div class="social">Партнёрам</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_open">
+      <div class="bg-gray-800">
+        <div class="container flex xs:flex-col justify-between py-4 xsm:py-6">
+          <div class="flex xsm:flex-col xs:mb-2">
+            <p class="text-xs font-semibold text-white tracking-tight mr-9 xsm:mb-2">© 2020 Интернет маркетплейс
+              OpenCaravan™.</p>
+            <p class="text-xs font-semibold text-gray-300 tracking-tight">ТМ используется на основании лицензии
+              правообладателя</p>
+          </div>
+          <p class="text-xs font-semibold text-gray-300 tracking-tight">Разработано студией <a href="#"
+              class="text-white border-b border-white">Arniro</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

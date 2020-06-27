@@ -60,7 +60,7 @@ section,
 .section {
   position: relative;
   padding: 0 0 40px 0;
-  top: -27px;
+  top: -8px;
   @media screen and (max-width: $smDesktopWidth) {
     padding: 0 0 36px 0;
   }
@@ -77,21 +77,29 @@ section,
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
-  max-width: $desktopWidth;
+  max-width: $desktopWidth;//1280px
   padding-left: 93px;
-
+  //1024-->768
   @media screen and (max-width: $smDesktopWidth) {
     max-width: $tableWidth;
   }
+  //768-->640
   @media screen and (max-width: $tableWidth) {
     max-width: $phoneWidth;
+    
   }
   @media screen and (max-width: $phoneWidth) {
     max-width: $smPhoneWidth;
+    
   }
 }
 
 /* header menu */
+.header {
+  
+  width: 100%;
+  height: 100px;
+}
 .header-menu_one {
   background-color: #ebebeb;
   padding-top: 4px;
@@ -99,7 +107,6 @@ section,
   .nav {
     .nav-link {
       font-style: "Regular";
-      font-size: 10px;
       color: #767676;
       padding: 18px 25px 0 0;
       &:hover {
@@ -108,6 +115,22 @@ section,
       }
     }
   }
+  .authorization{
+    width: 155px;
+    height: 20.25px;
+    position: absolute;
+    top: -5px;
+    right: 0 ;
+     &.register{
+      
+    }
+     & .login{
+      position: relative; 
+      top: -27px;
+      float: right;
+    }
+  }
+  
 }
 
 .header-menu_tow {
@@ -132,6 +155,49 @@ section,
   height: 20px;
   top: 22px;
   left: 142px;
+}
+
+.elements{
+  display: inline;
+  .search{
+    position: relative;
+    top: -120px;
+    left: 1022px;
+    width: 44px;
+    height: 44px;
+    border-radius: 25px;
+    .search_button{
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 25px;
+      z-index: 50;
+    }
+    .search_icon{
+      position: absolute;
+      top: 14px;
+      left: 14px;
+    }
+  }
+  .box_basket{
+    width: 89px;
+    height: 44px;
+    position: relative;
+    top: -164px;
+    left: 1085px;
+    border-radius: 50px;
+    z-index: 50;
+    .button_basket{
+      position: absolute;
+      top: 14px;
+      left: 14px;
+    }
+    .link_basket{
+      position: absolute;
+      top: 14px;
+      left: 50px;
+    }
+  }
 }
 
 /* скрываем чекбокс */
@@ -223,11 +289,18 @@ section,
 /* header menu END*/
 /* header SLIDER */
 
+.all {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  z-index: 2;
+}
 .header_slider {
   /*положение слайдера*/
-  position: relative;
+  position: absolute;
   text-align: center;
-  top: -46px;
+  top: 1px;
+  height: 486px;
   & {
     /*центровка слайдера*/
     margin: 0 auto;
@@ -546,8 +619,8 @@ a {
   position: absolute;
   left: 60px;
   top: 215px;
-  background-color: #fff;
-  color: #ff6401;
+  background-color: $default-color;
+  color: $main-color;
   & .watch {
     position: absolute;
     left: 29px;
@@ -589,8 +662,8 @@ a {
   left: 290px;
   top: 21px;
   font-size: 14px;
-  background-color: #ff6401;
-  color: #fff;
+  background-color: $main-color;
+  color: $default-color;
   & .watch_all {
     position: absolute;
     left: 35px;
@@ -628,14 +701,24 @@ a {
 }
 /*compilation_all END*/
 /*Products*/
+
+.products_all {
+  width: auto;
+  height: 1100px;
+}
 .products_head {
+  position: relative;
+  top: 27px;
+  left: 0;
+  width: 100%;
+  height: 30px;
 }
 .title_products {
   position: absolute;
   width: 370px;
   height: 30px;
-  left: 96px;
-  top: 24px;
+  left: 3px;
+  top: -4px;
   & span {
     font-size: 19px;
     font-weight: bold;
@@ -650,21 +733,21 @@ a {
   width: 426px;
   height: 30px;
   right: 81px;
-  top: 23px;
+  top: -4px;
 }
 .menu__box_prodects {
-  & .menu__item1 {
-    position: relative;
-    float: left;
-    padding: 12px 13px;
-    color: #383838;
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    word-spacing: -1px;
-    text-decoration: none;
-
+}
+.menu__item1 {
+  position: relative;
+  float: left;
+  padding: 12px 13px;
+  color: #383838;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  word-spacing: -1px;
+  text-decoration: none;
+  &:hover {
     &:after {
       content: " ";
       text-align: center;
@@ -673,16 +756,25 @@ a {
       background-color: #d88521;
       position: absolute;
       right: 23%;
-      top: 2px;
+      top: 1px;
       margin: 32px 6px 0 0;
     }
   }
 }
 
 .products_block_one {
-  height: 100%;
+  position: relative;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 471px;
 }
 .products_block_two {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 471px;
   & .rectangles_discount {
     @include rectangle;
     background-color: #81bb6d;
@@ -703,8 +795,8 @@ a {
   width: 253px;
   height: 417px;
   background-color: #fff;
-  margin: 0 26px 28px 0;
-  top: 91px;
+  margin: 0 26px 2px 0;
+  top: 34px;
   border-radius: 5px;
 }
 
@@ -797,6 +889,22 @@ a {
   letter-spacing: 0.5px;
 }
 
+.products_like{
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  position: relative;
+  top: 74px;
+  left: 218px;
+ .button_like{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+  }
+  &:hover{
+    background-color: #e8650f;
+  }
+}
 .next {
   font-size: 11px;
   font-weight: bold;
@@ -837,7 +945,7 @@ a {
 /*BANNER*/
 .banner {
   position: relative;
-  top: 1131px;
+  top: 0;
   left: 0px;
   width: 1091px;
   height: 259px;
@@ -885,14 +993,28 @@ a {
 
 /*BANNER END*/
 /*SUPPLIERS*/
+.suppliers {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 288px;
+}
 .suppliers_head {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+.suppliers_head_title {
   font-size: 21px;
   color: rgb(51, 52, 63);
   font-weight: bold;
   line-height: 1.2;
   position: absolute;
-  left: 95px;
-  top: 1165px;
+  left: 2px;
+  top: 2px;
   letter-spacing: -0.2px;
   word-spacing: 1px;
 }
@@ -903,7 +1025,7 @@ a {
   line-height: 1.2;
   position: absolute;
   right: 116px;
-  top: 1176px;
+  top: 13px;
   letter-spacing: 0.1px;
   word-spacing: 0px;
 }
@@ -921,7 +1043,7 @@ a {
   height: 140px;
   background-color: #fff;
   margin: 0 28px 28px 0;
-  top: 670px;
+  top: 120px;
   border-radius: 3px;
 }
 .suppliers_logo {
@@ -985,14 +1107,21 @@ a {
 }
 /*SUPPLIERS END*/
 /*feedback form*/
+.sub {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 197px;
+}
 .sub_box {
   background-color: #f0f0f0;
   background: url("/assets/img/mail.png") 1420px 202px;
   width: 630px;
   height: 176px;
   position: absolute;
-  left: 324px;
-  top: 1391px;
+  left: 230px;
+  top: 2px;
   border-radius: 3px;
 }
 .sub_title {
@@ -1004,15 +1133,13 @@ a {
   top: 25px;
 }
 .sub_text {
-    font-size: 11px;
-    color: rgb(106, 107, 119);
-    line-height: 1.2;
-    position: absolute;
-    left: 35px;
-    top: 53px;
-    word-spacing: 0.9px;
-}
-.mainform {
+  font-size: 11px;
+  color: rgb(106, 107, 119);
+  line-height: 1.2;
+  position: absolute;
+  left: 35px;
+  top: 53px;
+  word-spacing: 0.9px;
 }
 .email {
   border-radius: 9px;
@@ -1022,13 +1149,13 @@ a {
   top: 88px;
   width: 558px;
   height: 61px;
-  & .expanded{
-      font-size: 13px;
-      color: #afafb5;
-      line-height: 1.2;
-      position: absolute;
-      left: 28px;
-      top: 24px;
+  & .expanded {
+    font-size: 13px;
+    color: #afafb5;
+    line-height: 1.2;
+    position: absolute;
+    left: 28px;
+    top: 24px;
   }
 }
 .button_send {
@@ -1056,6 +1183,233 @@ a {
     background-color: #ff6401;
     cursor: pointer;
   }
+}
+/*feedback form END*/
+/*FOOTER*/
+.footer {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 207px;
+  position: relative;
+  left: 0;
+  top: -12px;
+}
+.service {
+  & .footer_title {
+    position: absolute;
+    left: 94px;
+    top: 42px;
+  }
+  & .link1 {
+    position: absolute;
+    left: 94px;
+    top: 65px;
+  }
+  & .link2 {
+    position: absolute;
+    left: 94px;
+    top: 85px;
+  }
+  & .link3 {
+    position: absolute;
+    left: 94px;
+    top: 105px;
+  }
+  & .link4 {
+    position: absolute;
+    left: 94px;
+    top: 125px;
+  }
+  & .link5 {
+    position: absolute;
+    left: 94px;
+    top: 145px;
+  }
+  & .link6 {
+    position: absolute;
+    left: 94px;
+    top: 165px;
+  }
+}
+.all_caravan {
+  & .footer_title {
+    position: absolute;
+    left: 312px;
+    top: 42px;
+  }
+  & .link1 {
+    position: absolute;
+    left: 312px;
+    top: 65px;
+  }
+  & .link2 {
+    position: absolute;
+    left: 312px;
+    top: 85px;
+  }
+  & .link3 {
+    position: absolute;
+    left: 312px;
+    top: 105px;
+  }
+  & .link4 {
+    position: absolute;
+    left: 312px;
+    top: 125px;
+  }
+  & .link5 {
+    position: absolute;
+    left: 312px;
+    top: 145px;
+  }
+  & .link6 {
+    position: absolute;
+    left: 312px;
+    top: 165px;
+  }
+}
+.contact {
+  & .footer_title {
+    position: absolute;
+    left: 822px;
+    top: 41px;
+  }
+  & .link1 {
+    position: absolute;
+    left: 822px;
+    top: 65px;
+    & span {
+      width: 139px;
+      height: 37px;
+      line-height: 1.3;
+      position: absolute;
+      left: 62px;
+      top: 5px;
+    }
+  }
+  & .link2 {
+    width: 139px;
+    height: 37px;
+    position: absolute;
+    left: 822px;
+    top: 100px;
+    & span {
+      width: 120px;
+      height: 37px;
+      line-height: 1.2;
+      position: absolute;
+      left: 62px;
+      top: 5px;
+    }
+  }
+  & .link3 {
+    position: absolute;
+    left: 822px;
+    top: 142px;
+    & span {
+      width: 139px;
+      height: 37px;
+      line-height: 1.3;
+      position: absolute;
+      left: 62px;
+      top: 5px;
+    }
+  }
+}
+.social_network {
+  & .footer_title {
+    position: absolute;
+    left: 1080px;
+    top: 41px;
+  }
+  & .link1 {
+    position: absolute;
+    left: 1080px;
+    top: 65px;
+  }
+  & .link2 {
+    position: absolute;
+    left: 1080px;
+    top: 85px;
+  }
+  & .link3 {
+    position: absolute;
+    left: 1080px;
+    top: 105px;
+  }
+}
+.footer_title {
+  font-size: 12px;
+  color: rgb(55, 55, 55);
+  line-height: 1.2;
+  word-spacing: 0;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.footer_link {
+  font-size: 9px;
+  color: rgb(143, 143, 143);
+  line-height: 2.083;
+  word-spacing: 0;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+.footer_text {
+  font-size: 9px;
+  color: rgb(143, 143, 143);
+  line-height: 2.083;
+  word-spacing: 0;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+
+.footer_logo {
+  position: absolute;
+  left: 558px;
+  top: 42px;
+}
+.footer_img {
+  width: 163px;
+  height: 136px;
+}
+
+.button_social {
+  @include button_main;
+  border-radius: 4px;
+  border: 2px solid #8d8d8d;
+  width: 100px;
+  height: 37px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  position: absolute;
+  left: 1082px;
+  top: 144px;
+  background-color: #f0f0f0;
+  color: #373737;
+  & .social {
+    font-size: 10px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    letter-spacing: 0.9px;
+    word-spacing: -1.5px;
+    font-weight: 600;
+  }
+  &:hover {
+    width: 110px;
+    height: 43px;
+    & .social {
+      left: 20px;
+      top: 15px;
+    }
+  }
+}
+
+.footer_open{
+  position: relative;
+  top: -12px;
+  left: 0;
 }
 // Modules:
 // example: @import "modules/my-module.scss";
