@@ -11,64 +11,80 @@
 <body>
   <!--Header-->
   <header class="header">
-    <div class="header-menu_one">
+    <div class="bg-gray-400 sm:hidden lg:block">
       <div class="container">
-        <div class="">
-          <nav class="text-xs nav">
-            <a href="#" class="nav-link">Новинки</a>
-            <a href="#" class="nav-link">Лидеры продаж</a>
-            <a href="#" class="nav-link">Кредит</a>
-            <a href="#" class="nav-link">Продавай</a>
-            <a href="#" class="nav-link">Все продавцы</a>
-            <a href="#" class="nav-link">Контакты</a>
+        <div class="flex justify-between items-center py-2 ">
+          <nav class="flex items-center text-xs py-1 nav">
+            <a href="#" class="mr-10 smd:mr-5 nav-link">Новинки</a>
+            <a href="#" class="mr-10 smd:mr-5 nav-link">Лидеры продаж</a>
+            <a href="#" class="mr-10 smd:mr-5 nav-link">Кредит</a>
+            <a href="#" class="mr-10 smd:mr-5 nav-link">Продавай</a>
+            <a href="#" class="mr-10 smd:mr-5 nav-link">Все продавцы</a>
+            <a href="#" class="mr-10 smd:mr-5 nav-link">Контакты</a>
           </nav>
-          <div class="authorization">
-            <div class="register">
-              <a href="#" class="text-xs font-semibold text-gray-900 mr-3">Регистрация</a>
-            </div>
-            <div class="login">
-              <a href="#" class="text-xs font-semibold text-gray-900 mr-3">Вход</a>
-            </div>
+          <div class="flex items-center py-1">
+            <a href="#" class="text-xs font-semibold text-gray-900 mr-3">Регистрация</a>
+            <a href="#" class="text-xs font-semibold text-gray-900 mr-3">Вход</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="header-menu_two">
-      <div class="container">
-        <div class="header-logo">
-          <img class="header-logo logo_1" src="./assets/img/logo.png" alt="caravan">
-          <img src="./assets/img/logo_open_caravan.png" alt="caravan" class="header-logo logo_2">
-        </div>
-        <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
-          <ul class="menu__box">
-            <li><a class="menu__item" href="#">Одежда</a></li>
-            <li><a class="menu__item" href="#">Обувь</a></li>
-            <li><a class="menu__item" href="#">Мобильные телефоны</a></li>
-            <li><a class="menu__item" href="#">Электронника</a></li>
-            <li><a class="menu__item" href="#">Аксессуары</a></li>
-            <li><a class="menu__item" href="#">Бренды</a></li>
-          </ul>
-        </div>
-        <div class="elements">
-          <div class="search">
-            <button class="search_button w-full h-full bg-orange-600">
-              <img src="./assets/img/search.png" alt="" class="search_icon">
-            </button>
-          </div>
-          <div class="box_basket bg-red-100 px-3">
-            <button class="button_basket">
-              <img src="./assets/img/like_icon.png" alt="">
-            </button>
-            <a href="" class="link_basket">
-              <img src="./assets/img/basket_icon.png" alt="">
+    <div class="container sm:hidden  lg:block">
+      <div class="flex py-3">
+        <div class="flex justify-between w-full">
+          <div class="flex items-center">
+            <a href="#">
+              <div class="flex items-center">
+                <img class="mr-5 logo_1" src="./assets/img/logo.png" alt="caravan">
+                <img class="mr-8 logo_2" src="./assets/img/logo_open_caravan.png" alt="caravan">
+              </div>
             </a>
+            <div class="flex items-center">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="flex items-center mr-6 sm:invisible md:visible lg:visible menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
+              <ul class="flex items-center w-full sm:invisible md:invisible lg:visible menu__box">
+                <li><a class="mr-6 menu__item" href="#">Одежда</a></li>
+                <li><a class="mr-6 menu__item" href="#">Обувь</a></li>
+                <li><a class="mr-6 menu__item" href="#">Мобильные телефоны</a></li>
+                <li><a class="mr-6 menu__item" href="#">Электронника</a></li>
+                <li><a class="mr-6 menu__item" href="#">Аксессуары</a></li>
+                <li><a class="mr-6 menu__item" href="#">Бренды</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="relative mr-4 search">
+              <button class="search_button w-full h-full bg-orange-600">
+                <img src="./assets/img/search.png" alt="" class="absolute right-0 top-0 p-3">
+              </button>
+            </div>
+            <div class="flex items-center box_basket bg-red-100 px-3">
+              <button class="button_basket mr-6">
+                <img src="./assets/img/like_icon.png" alt="">
+              </button>
+              <a href="" class="link_basket">
+                <img src="./assets/img/basket_icon.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
+    </div>
+    <div class="container lg:hidden sm:block ">
+      <div class="flex justify-start py-3 ">
+        <label class="flex items-center mr-56 md:mr-64 w-6 h-auto menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <a href="#">
+          <div class="flex  items-center  md:ml-8">
+            <img class="mr-8 logo_2" src="./assets/img/logo_open_caravan.png" alt="caravan">
+          </div>
+        </a>
+      </div>
+      
     </div>
   </header>
   <!--Sliader-->
@@ -83,28 +99,29 @@
       <div id="slides">
         <div id="overflow">
           <div class="image">
-            <article>
-              <div class="header_title">
+            <article class=" relative">
+              <div class="header_title xl:pt-32 xl:pl-32 lg:pt-24 lg:pl-32 md:pt-20 ">
                 <h2 class="style_title">summer collection</h2>
-                <h1 class="style_title_main">Blvckbird paris izz</h1>
-                <div class="price_title">
+                <h1 class="lg:text-5xl md:text-4xl style_title_main">Blvckbird paris izz</h1>
+                <div class="price_title xl:mb-16 lg:mb-12 md:mb-10">
                   <div class="price">
                     от <span class="new_price">$26.00</span> <span class="old_price">$67.00</span>
                   </div>
                 </div>
+                <div class="flex">
+                  <a href="#" class="button_link">
+                    <div class="mr-8 button_buy">
+                      <div class="py-3">Купить сейчас</div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="button_collection">
+                      <div class="py-3">Коллекция</div>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class="button_slider">
-                <a href="#" class="button_link">
-                  <div class="button_buy">
-                    <div class="buy">Купить сейчас</div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="button_collection">
-                    <div class="collection">Коллекция</div>
-                  </div>
-                </a>
-              </div>
+
               <img src="./assets/img/main_slider.png">
             </article>
             <article><img src="./assets/img/logo_open_caravan.png"></article>
@@ -120,7 +137,7 @@
         <label for="switch4"></label>
         <label for="switch5"></label>
       </div>
-      <div id="active">
+      <div class="" id="active">
         <label for="switch1"></label>
         <label for="switch2"></label>
         <label for="switch3"></label>
@@ -131,41 +148,42 @@
   </section>
   <!--Compilation-->
   <section>
-
     <div class="container">
-      <div class="compilation_all w-auto h-64">
-        <div class="compilation_1">
-          <img src="./assets/img/compilation_1.png" class="compilation_image w-56 h-auto">
-          <div class="compilation_title">
-            <h3 class="title">самое модное</h3>
-            <span class="text">2020</span>
-            <a href="#">
-              <div class="button_watch">
-                <div class="watch">Смотреть</div>
+      <div class="flex lg:flex-no-wrap lg:justify-center sm:flex-wrap sm:justify-around compilation_all">
+        <div class="flex mr-8 lg:order-1 sm:order-2 relative text-center ">
+          <img src="./assets/img/compilation_1.png" class="xl:w-auto xl:h-64  w-full h-full">
+          <div class="sm:pl-10 lg:pl-3 pt-32 pl-4 pr-3  compilation__title">
+            <h3 class=" title ">самое модное</h3>
+            <span class=" text">2020</span>
+            <a href="#" class="flex ml-6 mr-4 w-40 h-12">
+              <div class=" button_watch">
+                <div class="py-3 watch">Смотреть</div>
               </div>
             </a>
           </div>
         </div>
-        <div class="compilation_2">
-          <img src="./assets/img/compilation.png" class="compilation_image2">
-          <div class="box">
-            <div class="compilation_2_title">
-              <span class="text">Collection 2020</span>
-              <h3 class="title">Весна-лето</h3>
-              <a href="#">
+        <div class="flex lg:mr-8 sm:mr-0 sm:mb-8 lg:mb-0 sm:order-1 relative">
+          <img src="./assets/img/compilation.png" class="xl:w-auto xl:h-64 w-full h-full">
+          <div class="box lg:ml-0 sm:ml-12">
+            <div class="flex pl-4 compilation__title">
+              <div class="pt-6 mr-12 compilation_2_title">
+                <span class="text mb-4">Collection 2020</span>
+                <h3 class="title">Весна-лето</h3>
+              </div>
+              <a href="#" class="flex items-end ">
                 <div class="button_watch_all">
-                  <div class="watch_all">Смотреть всё</div>
+                  <div class="py-3 watch_all">Смотреть всё</div>
                 </div>
               </a>
             </div>
           </div>
         </div>
-        <div class="compilation_3">
-          <img src="./assets/img//compilation_3.png" class="compilation_image w-56 h-auto">
-          <div class="box">
-            <div class="compilation_3_title">
+        <div class="flex relative sm:order-2">
+          <img src="./assets/img//compilation_3.png" class="xl:w-auto xl:h-64 w-full h-full">
+          <div class="bg-white w-40 h-16 absolute top-0 left-0 mx-8 mt-16 lg:ml-8 sm:ml-20">
+            <div class="text-center px-4 py-1 compilation__title compilation_3_title">
               <span class="text">Новинка</span>
-              <h3 class="title">Джинсы</h3>
+              <h3 class="text-2xl title">Джинсы</h3>
             </div>
           </div>
         </div>
@@ -175,275 +193,374 @@
   <section>
     <div class="container">
       <div class="products_all">
-        <div class="products_head">
-          <div class="title_products"><span>Обновление в нашем Караване</span></div>
-          <div class="box_menu">
-            <ul class="menu__box_prodects">
-              <li><a class="menu__item1" href="#">Со скидками</a></li>
-              <li><a class="menu__item1" href="#">Одежда</a></li>
-              <li><a class="menu__item1" href="#">Лето</a></li>
-              <li><a class="menu__item1" href="#">Горы</a></li>
-              <li><a class="menu__item1" href="#">Для авто</a></li>
-              <li><a class="menu__item1" href="#">Спорт</a></li>
-            </ul>
+        <div class="flex justify-between   items-center ">
+          <div class="flex items-center">
+            <h2 class="text-2xl font-bold text-gray-800 leading-none ">Обновление в нашем Караване</h2>
           </div>
+          <ul class="flex items-center">
+            <li><a class="menu__item1" href="#">Со скидками</a></li>
+            <li><a class="menu__item1" href="#">Одежда</a></li>
+            <li><a class="menu__item1" href="#">Лето</a></li>
+            <li><a class="menu__item1" href="#">Горы</a></li>
+            <li><a class="menu__item1" href="#">Для авто</a></li>
+            <li><a class="menu__item1" href="#">Спорт</a></li>
+          </ul>
         </div>
-        <div class="products_block_one">
-          <div class="products_block">
-            <div class="products_item1">
-              <div class="rectangles_new">
-                <span class="new">Новинка</span>
-              </div>
-              <div class="rectangles_discount">
-                <span class="discount">Скидка</span>
+        <div class="flex justify-around flex-wrap ">
+          <!--block 1-->
+          <div class=" mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class=" relative">
+              <div class="absolute top-0 left-0 pl-4 pt-4">
+                <div class=" rectangles text-center mb-2">
+                  <span class="text-xs text-white font-bold ">Новинка</span>
+                </div>
+                <div class="rectangles text-center bg-green-600">
+                  <span class="text-xs text-white font-bold">Скидка</span>
+                </div>
               </div>
               <a href="">
-                <img src="./assets/img/products_block1.png" alt="" class="products_image">
-                <h4 class="products_type">Мужская куртка</h4>
-                <p class="products_text">Синяя джинсовая куртка с эффектом
-                  брызг краски Good For Nothing</p>
+                <img src="./assets/img/products_block1.png" alt="" class="">
               </a>
-              <span class="products_price">USD <span class="price_old">40.95</span><span
-                  class="price_new">32.95</span></span>
-              <a href=""><span class="arni_store">Arniro.store</span></a>
-              <div class="products_like bg-red-100 px-3 ">
-                <button class="button_like">
-                  <img src="./assets/img/like_icon.png" alt="">
-                </button>
+              <div class="">
+                <h4 class="products_type mt-5 mb-3">Мужская куртка</h4>
+                <p class="products_text w-full sm:w-64">Синяя джинсовая куртка с эффектом
+                  брызг краски Good For Nothing</p>
+                <span class="products_price">USD <span class="price_old">40.95</span><span
+                    class="price_new">32.95</span></span>
+                <div class="flex justify-between">
+                  <div>
+                    <a href=""><span class="arni_store">Arniro.store</span></a>
+                  </div>
+                  <div class="relative products_like bg-red-100 ">
+                    <button class="absolute top-0 right-0">
+                      <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="products_block">
-            <div class="products_item2">
+          <!--block 2-->
+          <div class=" mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class="relative">
               <a href="">
                 <img src="./assets/img/products_block2.png" alt="" class="products_image">
-                <h4 class="products_type">Свитшот</h4>
-                <p class="products_text">Серый свитшот с неоновым
+                <h4 class="products_type mt-5 mb-3">Свитшот</h4>
+                <p class="products_text sm:w-64">Серый свитшот с неоновым
                   логотипом Sixth June</p>
               </a>
               <span class="products_price">USD <span class="price_old">40.95</span><span
                   class="price_new">32.95</span></span>
-              <a href=""><span class="arni_store">Arniro.store</span></a>
-              <div class="products_like bg-red-100 px-3 ">
-                <button class="button_like">
-                  <img src="./assets/img/like_icon.png" alt="">
-                </button>
+              <div class="flex justify-between">
+                <div>
+                  <a href=""><span class="arni_store">Arniro.store</span></a>
+                </div>
+                <div class="relative products_like bg-red-100 ">
+                  <button class="absolute top-0 right-0">
+                    <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="products_block">
-            <div class="products_item3">
-              <div class="rectangles_new">
-                <span class="new">Новинка</span>
+          <!--block 3-->
+          <div class=" mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class="relative">
+              <div class="absolute top-0 left-0 pl-4 pt-4">
+                <div class=" rectangles text-center mb-2">
+                  <span class="text-xs text-white font-bold ">Новинка</span>
+                </div>
               </div>
               <a href="">
                 <img src="./assets/img/products_block3.png" alt="" class="products_image">
-                <h4 class="products_type">Аксессуары</h4>
-                <p class="products_text">Золотистое ярусное ожерелье с
+                <h4 class="products_type mt-5 mb-3">Аксессуары</h4>
+                <p class="products_text sm:w-64">Золотистое ярусное ожерелье с
                   подвеской DesignB London</p>
               </a>
               <span class="products_price">USD <span class="price_old">10.95</span><span
                   class="price_new">5.00</span></span>
-              <a href=""><span class="arni_store">Arniro.store</span></a>
-              <div class="products_like bg-red-100 px-3 ">
-                <button class="button_like">
-                  <img src="./assets/img/like_icon.png" alt="">
-                </button>
+              <div class="flex justify-between">
+                <div>
+                  <a href=""><span class="arni_store">Arniro.store</span></a>
+                </div>
+                <div class="relative products_like bg-red-100 ">
+                  <button class="absolute top-0 right-0">
+                    <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="products_block">
-            <div class="products_item4"></div>
-            <div class="rectangles_hit">
-              <span class="hit">Хит</span>
-            </div>
-            <a href="">
-              <img src="./assets/img/products_block4.png" alt="" class="products_image">
-              <h4 class="products_type">Крема</h4>
-              <p class="products_text">Дорожный набор средств по уходу
-                за кожей лица Cowshed Little Face...</p>
-            </a>
-            <span class="products_price">USD <span class="price_old">21.00</span><span
-                class="price_new">15.00</span></span>
-            <a href=""><span class="arni_store">Arniro.store</span></a>
-            <div class="products_like bg-red-100 px-3 ">
-              <button class="button_like">
-                <img src="./assets/img/like_icon.png" alt="">
-              </button>
+          <!--block 4-->
+          <div class=" mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class="relative">
+              <div class="absolute top-0 left-0 pl-4 pt-4">
+                <div class=" rectangles text-center mb-2 bg-red-600">
+                  <span class="text-xs text-white font-bold ">Хит</span>
+                </div>
+              </div>
+              <a href="">
+                <img src="./assets/img/products_block4.png" alt="" class="products_image">
+                <h4 class="products_type mt-5 mb-3">Крема</h4>
+                <p class="products_text sm:w-64">Дорожный набор средств по уходу
+                  за кожей лица Cowshed Little Face...</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">21.00</span><span
+                  class="price_new">15.00</span></span>
+              <div class="flex justify-between">
+                <div>
+                  <a href=""><span class="arni_store">Arniro.store</span></a>
+                </div>
+                <div class="relative products_like bg-red-100 ">
+                  <button class="absolute top-0 right-0">
+                    <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="products_block_two">
-          <div class="products_block">
-            <div class="products_item1">
-              <div class="rectangles_discount">
-                <span class="discount">Скидка</span>
+          <!--block 5-->
+          <div class="mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class="relative">
+              <div class="absolute top-0 left-0 pl-4 pt-4">
+                <div class="rectangles text-center bg-green-600">
+                  <span class="text-xs text-white font-bold">Скидка</span>
+                </div>
               </div>
               <a href=""><img src="./assets/img/products_block5.png" alt="" class="products_image">
-                <h4 class="products_type">Джинсы</h4>
-                <p class="products_text">Узкие джинсы со средним эффектом
+                <h4 class="products_type mt-5 mb-3">Джинсы</h4>
+                <p class="products_text sm:w-64">Узкие джинсы со средним эффектом
                   поношенности G-Star 3301</p>
               </a>
               <span class="products_price">USD <span class="price_old">40.95</span><span
                   class="price_new">38.15</span></span>
-              <a href=""><span class="arni_store">Arniro.store</span></a>
-              <div class="products_like bg-red-100 px-3 ">
-                <button class="button_like">
-                  <img src="./assets/img/like_icon.png" alt="">
-                </button>
+              <div class="flex justify-between">
+                <div>
+                  <a href=""><span class="arni_store">Arniro.store</span></a>
+                </div>
+                <div class="relative products_like bg-red-100 ">
+                  <button class="absolute top-0 right-0">
+                    <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="products_block">
-            <div class="products_item2">
+          <!--block 6-->
+          <div class="mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class="relative">
               <a href=""><img src="./assets/img/products_block6.png" alt="" class="products_image">
-                <h4 class="products_type">Женская обувь</h4>
-                <p class="products_text">Кожаные светло-коричневые туфли
+                <h4 class="products_type mt-5 mb-3">Женская обувь</h4>
+                <p class="products_text sm:w-64">Кожаные светло-коричневые туфли
                   на плоской подошве ASOS DESIGN</p>
               </a>
               <span class="products_price">USD <span class="price_old">40.95</span><span
                   class="price_new">32.95</span></span>
-              <a href=""><span class="arni_store">Arniro.store</span></a>
-              <div class="products_like bg-red-100 px-3 ">
-                <button class="button_like">
-                  <img src="./assets/img/like_icon.png" alt="">
-                </button>
+              <div class="flex justify-between">
+                <div>
+                  <a href=""><span class="arni_store">Arniro.store</span></a>
+                </div>
+                <div class="relative products_like bg-red-100 ">
+                  <button class="absolute top-0 right-0">
+                    <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="products_block">
-            <div class="products_item3">
-              <div class="rectangles_hit">
-                <span class="hit">Хит</span>
+          <!--block 7-->
+          <div class="mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class="relative">
+              <div class="absolute top-0 left-0 pl-4 pt-4">
+                <div class=" rectangles text-center mb-2 bg-red-600">
+                  <span class="text-xs text-white font-bold ">Хит</span>
+                </div>
               </div>
               <a href=""><img src="./assets/img/products_block7.png" alt="" class="products_image">
-                <h4 class="products_type">Женская футболка</h4>
-                <p class="products_text">Черное свободное платье-футболка
+                <h4 class="products_type mt-5 mb-3">Женская футболка</h4>
+                <p class="products_text sm:w-64">Черное свободное платье-футболка
                   с логотипом-галочкой Nike</p>
               </a>
               <span class="products_price">USD <span class="price_old">20.40</span><span
                   class="price_new">35.00</span></span>
-              <a href=""><span class="arni_store">Arniro.store</span></a>
-              <div class="products_like bg-red-100 px-3 ">
-                <button class="button_like">
-                  <img src="./assets/img/like_icon.png" alt="">
-                </button>
+              <div class="flex justify-between">
+                <div>
+                  <a href=""><span class="arni_store">Arniro.store</span></a>
+                </div>
+                <div class="relative products_like bg-red-100 ">
+                  <button class="absolute top-0 right-0">
+                    <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="products_block">
-            <div class="products_item4"></div>
-            <a href="">
-              <img src="./assets/img/products_block8.png" alt="" class="products_image">
-              <h4 class="products_type">Аксессуары</h4>
-              <p class="products_text">Черные солнцезащитные очки в
-                крупной оправе River Island</p>
-            </a>
-            <span class="products_price">USD <span class="price_old">21.00</span><span
-                class="price_new">15.00</span></span>
-            <a href=""><span class="arni_store">Arniro.store</span></a>
-            <div class="products_like bg-red-100 px-3 ">
-              <button class="button_like">
-                <img src="./assets/img/like_icon.png" alt="">
-              </button>
+          <!--block 8-->
+          <div class="mr-4 mb-10 xl:w-64 xl:h-auto lg:w-56 lg:h-auto products_block">
+            <div class="relative">
+              <a href="">
+                <img src="./assets/img/products_block8.png" alt="" class="products_image">
+                <h4 class="products_type mt-5 mb-3">Аксессуары</h4>
+                <p class="products_text sm:w-64">Черные солнцезащитные очки в
+                  крупной оправе River Island</p>
+              </a>
+              <span class="products_price">USD <span class="price_old">21.00</span><span
+                  class="price_new">15.00</span></span>
+              <div class="flex justify-between">
+                <div>
+                  <a href=""><span class="arni_store">Arniro.store</span></a>
+                </div>
+                <div class="relative products_like bg-red-100 ">
+                  <button class="absolute top-0 right-0">
+                    <img src="./assets/img/like_icon.png" alt="" class="px-3 py-3 w-full h-full">
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <span class="next">Вы просмотрели 8 из 1 069 товаров</span>
-        <a href="#">
-          <div class="button_Load_more">
-            <div class="Load_more">Загрузить еще +</div>
-          </div>
-        </a>
+        <div class="text-center mb-8">
+          <span class="next">Вы просмотрели 8 из 1 069 товаров</span>
+        </div>
+        <div class="flex justify-center">
+          <a href="#">
+            <div class="button_Load_more">
+              <div class="Load_more py-5">Загрузить еще +</div>
+            </div>
+          </a>
+        </div>
       </div>
+    </div>
     </div>
   </section>
   <!--Banner-->
   <section>
     <div class="container">
-      <div class="banner">
-        <div class="banner_image"></div>
-        <h2 class="banner_title">Успей купить стильные часы Timex
-          по специальным ценам!</h2>
-        <p class="banner_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          inci-didunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas accumsan lacus vel facilisis. </p>
-        <span class="banner_price">USD 126.00$</span>
+      <div class="flex justify-center">
+        <div class=" banner">
+          <div class="pl-10 pt-16 pb-10">
+            <h2 class="banner_title pb-4 lg:text-4xl sm:text-lg">Успей купить стильные часы Timex
+              по специальным ценам!</h2>
+            <p class="banner_text pb-8 lg:text-base sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor
+              inci-didunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+              viverra
+              maecenas accumsan lacus vel facilisis. </p>
+            <span class="banner_price lg:text-3xl sm:text-lg">USD 126.00$</span>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
   <!--Suppliers-->
   <section>
-
     <div class="container">
-      <div class="suppliers">
-        <div class="suppliers_head">
+      <div>
+        <div class="flex justify-between mb-10">
           <h2 class="suppliers_head_title">Поставщики нашего Каравана</h2>
-          <a href="#" class="suppliers_watch_all">Смотреть всех
-            <img src="./assets/img/watch_all.png" class="watch_all_img">
+          <a href="#" class="flex items-center  ">
+            <span class="suppliers_watch_all pr-8">Смотреть всех</span>
+            <img src="./assets/img/watch_all.png" class=" watch_all_img">
           </a>
         </div>
-        <a href="">
-          <div class="suppliers_block">
-            <div class="suppliers_logo"></div>
-            <div class="suppliers_title ">KirillSpace MC</div>
-            <div class="suppliers_link">Nosorog</div>
+        <div class="flex justify-start flex-wrap items-center">
+          <!--block1-->
+          <div class="mr-6">
+            <a href="">
+              <div class="w-40 h-24 mb-5 bg-gray-300 rounded-md">
+                <div class="">
+                  <img src="./assets/img/suppliers1.png" alt="" class="w-auto h-auto py-8 px-16">
+                </div>
+              </div>
+              <div class="suppliers_title pb-2">KirillSpace MC</div>
+              <div class="suppliers_link">Nosorog</div>
+            </a>
           </div>
-        </a>
-        <a href="">
-          <div class="suppliers_block ">
-            <div class="suppliers_logo arniro"></div>
-            <div class="suppliers_title suppliers_title">Nikita Nischuk</div>
-            <div class="suppliers_link">Arniro.oi</div>
+          <!--block2-->
+          <div class="mr-6">
+            <a href="">
+              <div class="w-40 h-24 mb-5 bg-gray-900 rounded-md">
+                <div class="">
+                  <img src="./assets/img/ARNIRO.png" alt="" class="w-auto h-auto py-10 px-8">
+                </div>
+              </div>
+              <div class="suppliers_title pb-2">Nikita Nischuk</div>
+              <div class="suppliers_link">Arniro.oi</div>
+            </a>
           </div>
-        </a>
-        <a href="">
-          <div class="suppliers_block">
-            <div class="suppliers_logo aliya"></div>
-            <div class="suppliers_title suppliers_title">Aliya furs</div>
-            <div class="suppliers_link">Aliya.kg</div>
+          <!--block3-->
+          <div class="mr-6">
+            <a href="">
+              <div class="w-40 h-24 mb-5 bg-gray-800 rounded-md">
+                <div class="">
+                  <img src="./assets/img/aliya.png" alt="" class="w-auto h-full ">
+                </div>
+              </div>
+              <div class="suppliers_title pb-2">Aliya furs</div>
+              <div class="suppliers_link">Aliya.kg</div>
+            </a>
           </div>
-        </a>
-        <a href="">
-          <div class="suppliers_block">
-            <div class="suppliers_logo"></div>
-            <div class="suppliers_title suppliers_title">Slava COCO</div>
-            <div class="suppliers_link">Dordoi 105/7</div>
+          <!--block4-->
+          <div class="mr-6">
+            <a href="">
+              <div class="w-40 h-24 mb-5 bg-gray-300 rounded-md">
+                <div class="">
+                  <img src="./assets/img/suppliers1.png" alt="" class="w-auto h-auto py-8 px-16">
+                </div>
+              </div>
+              <div class="suppliers_title pb-2">Slava COCO</div>
+              <div class="suppliers_link">Dordoi 105/7</div>
+            </a>
           </div>
-        </a>
-        <a href="">
-          <div class="suppliers_block">
-            <div class="suppliers_logo red_mouse"></div>
-            <div class="suppliers_title suppliers_title">Nurs Komarov</div>
-            <div class="suppliers_link">Redmouse.pro</div>
+          <!--block5-->
+          <div class="mr-6">
+            <a href="">
+              <div class="w-40 h-24 mb-5 bg-red-600 rounded-md">
+                <div class="">
+                  <img src="./assets/img/RED MOUSE.png" alt="" class="w-auto h-auto py-5 px-8">
+                </div>
+              </div>
+              <div class="suppliers_title pb-2">Nurs Komarov</div>
+              <div class="suppliers_link">Redmouse.pro</div>
+            </a>
           </div>
-        </a>
-        <a href="">
-          <div class="suppliers_block">
-            <div class="suppliers_logo bird"></div>
-            <div class="suppliers_title suppliers_title">Blvckbird</div>
-            <div class="suppliers_link">Blvckbird.pro</div>
+          <!--block6-->
+          <div>
+            <a href="">
+              <div class="w-40 h-24 mb-5 bg-black rounded-md">
+                <div class="">
+                  <img src="./assets/img/suppliers6.png" alt="" class="w-auto h-auto py-10 px-4">
+                </div>
+              </div>
+              <div class="suppliers_title pb-2">Blvckbird</div>
+              <div class="suppliers_link">Blvckbird.pro</div>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
   </section>
   <!--Form-->
   <section>
     <div class="container">
-      <div class="sub">
-        <div class="sub_box">
-          <h2 class="sub_title">Рассылка</h2>
-          <p class="sub_text">Подпишись на рассылку и получай уведомления о скидках!</p>
-          <form class="mainform">
-            <p class="email">
-              <input type="text" name="email" class="expanded" placeholder="Example@gmail.com" />
-              <label for="email"></label>
-            </p>
-            <p class="button_send">
-              <input type="submit" class="send" value="Подписаться" />
-            </p>
-          </form>
+      <div class="flex justify-center">
+        <div class=" w-auto h-auto sub_box">
+          <div class="pl-12 pt-10 pr-12 pb-8">
+            <h2 class="sub_title pb-4">Рассылка</h2>
+            <p class="sub_text pb-6">Подпишись на рассылку и получай уведомления о скидках!</p>
+            <form class="mainform">
+              <div class="relative">
+                <p class="email py-4 pl-4">
+                  <input type="text" name="email" class="expanded" placeholder="Example@gmail.com" />
+                  <label for="email"></label>
+                </p>
+                <div class="absolute top-0 right-0">
+                  <p class="button_send py-5">
+                    <input type="submit" class="send" value="Подписаться" />
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -452,47 +569,76 @@
   <footer>
     <div class="footer">
       <div class="container">
-        <div class="service">
-          <h2 class="footer_title ">Сервис и поддержка</h2>
-          <a href="" class="footer_link link1"> Как сделать заказ</a>
-          <a href="" class="footer_link link2">Способы оплаты</a>
-          <a href="" class="footer_link link3">Доставка</a>
-          <a href="" class="footer_link link4">Возврат денежных средств</a>
-          <a href="" class="footer_link link5">Вопросы и ответы</a>
-          <a href="" class="footer_link link6">Скидочные товары</a>
-        </div>
-        <div class="all_caravan">
-          <h2 class="footer_title ">Вместе с караваном</h2>
-          <a href="" class="footer_link link1">О компании</a>
-          <a href="" class="footer_link link2">Правила размещения</a>
-          <a href="" class="footer_link link3">Поставщики</a>
-          <a href="" class="footer_link link4">Скидочные товарты</a>
-          <a href="" class="footer_link link5">Акции</a>
-          <a href="" class="footer_link link6">Товарные категории</a>
-        </div>
-        <div class="footer_logo">
-          <img src="./assets/img/footer_logo.png" alt="" class="footer_img">
-        </div>
-        <div class="contact">
-          <h2 class="footer_title ">Контакты</h2>
-          <p class="footer_text link1">Адрес: <span>г.Бишкек, ул. Донецкая 10/1
-              первый этаж</span></p>
-          <p class="footer_text link2">Телефон: <span>+996 (555) 300 - 555
-              +996 (700) 300 - 555
-              +996 (777) 300 - 555</span></p>
-          <p class="footer_text link3">E-mail <span>Opencaravan@caravan.kg
-              Helpcenter@caravan.kg</span></p>
-        </div>
-        <div class="social_network">
-          <h2 class="footer_title ">Мы в соц сетях</h2>
-          <a href="" class="footer_link link1">Instagram</a>
-          <a href="" class="footer_link link2">Facebook</a>
-          <a href="" class="footer_link link3">Whatsapp</a>
-          <a href="#">
-            <div class="button_social">
-              <div class="social">Партнёрам</div>
+        <div class="flex lg:justify-between md:justify-start sm:justify-start flex-wrap pt-12">
+          <!--Сервис и поддержка-->
+          <div class="pt-2 sm:order-md:order-1">
+            <h2 class="footer_title w-48 pb-5">Сервис и поддержка</h2>
+            <div class=" flex flex-col">
+              <a href="" class="footer_link "> Как сделать заказ</a>
+              <a href="" class="footer_link ">Способы оплаты</a>
+              <a href="" class="footer_link ">Доставка</a>
+              <a href="" class="footer_link ">Возврат денежных средств</a>
+              <a href="" class="footer_link ">Вопросы и ответы</a>
+              <a href="" class="footer_link ">Скидочные товары</a>
             </div>
-          </a>
+          </div>
+          <!--Вместе с караваном-->
+          <div class="pt-2 lg:pl-0 md:pl-12 sm:order-3 lg:order-1">
+            <h2 class="footer_title w-48 pb-5">Вместе с караваном</h2>
+            <div class="flex flex-col">
+              <a href="" class="footer_link">О компании</a>
+              <a href="" class="footer_link">Правила размещения</a>
+              <a href="" class="footer_link">Поставщики</a>
+              <a href="" class="footer_link">Скидочные товарты</a>
+              <a href="" class="footer_link">Акции</a>
+              <a href="" class="footer_link">Товарные категории</a>
+            </div>
+
+          </div>
+           <!--icon-->
+          <div class=" sm:order-1 md:order-2">
+            <div>
+              <div class=" items-end footer_logo pt-2 ">
+                <img src="./assets/img/footer_logo.png" alt="" class="footer_img">
+              </div>
+            </div>
+          </div>
+           <!--Контакты-->
+          <div class="pt-2 sm:order-4">
+            <h2 class="footer_title w-48 pb-5">Контакты</h2>
+            <div class="flex flex-col">
+              <div class="flex footer_text">
+                <span>Адрес:</span>
+                <span class="w-48 pl-8">г.Бишкек, ул. Донецкая 10/1
+                  первый этаж</span>
+              </div>
+              <div class="flex footer_text ">
+                <span> Телефон:</span>
+                <span class="w-40 pl-5">+996 (555) 300 - 555
+                  +996 (700) 300 - 555
+                  +996 (777) 300 - 555</span>
+              </div>
+              <div class="flex footer_text">
+                <span>E-mail:</span>
+                <span class="w-48 pl-8">Opencaravan@caravan.kg
+                  Helpcenter@caravan.kg</span>
+              </div>
+            </div>
+          </div>
+           <!--Мы в соц сетях-->
+          <div class="pt-2 lg:pl-0 md:pl-40 sm:order-2 md:order-4">
+            <h2 class="footer_title w-48 pb-5">Мы в соц сетях</h2>
+            <div class="flex flex-col">
+              <a href="" class="footer_link">Instagram</a>
+              <a href="" class="footer_link">Facebook</a>
+              <a href="" class="footer_link">Whatsapp</a>
+              <a href="#" class="pt-8">
+                <div class="py-2 button_social">
+                  <div class="social">Партнёрам</div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

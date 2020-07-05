@@ -60,7 +60,7 @@ section,
 .section {
   position: relative;
   padding: 0 0 40px 0;
-  top: -8px;
+  top: 0;
   @media screen and (max-width: $smDesktopWidth) {
     padding: 0 0 36px 0;
   }
@@ -78,7 +78,7 @@ section,
   position: relative;
   margin: 0 auto;
   max-width: $desktopWidth;//1280px
-  padding-left: 93px;
+  padding:0 20px;
   //1024-->768
   @media screen and (max-width: $smDesktopWidth) {
     max-width: $tableWidth;
@@ -95,110 +95,41 @@ section,
 }
 
 /* header menu */
-.header {
-  
-  width: 100%;
-  height: 100px;
-}
-.header-menu_one {
-  background-color: #ebebeb;
-  padding-top: 4px;
-  padding-bottom: 7px;
   .nav {
     .nav-link {
-      font-style: "Regular";
       color: #767676;
-      padding: 18px 25px 0 0;
       &:hover {
         color: #393939;
         text-decoration: underline;
       }
     }
   }
-  .authorization{
-    width: 155px;
-    height: 20.25px;
-    position: absolute;
-    top: -5px;
-    right: 0 ;
-     &.register{
-      
-    }
-     & .login{
-      position: relative; 
-      top: -27px;
-      float: right;
-    }
-  }
-  
-}
-
-.header-menu_tow {
-  padding-top: 11px;
-  padding-bottom: 15px;
-  .header-logo {
-    display: inline-block;
-    margin-right: 18px;
-  }
-}
 
 .logo_1 {
-  width: 37px;
-  height: 37px;
-  position: relative;
-  top: 12px;
-  left: 0;
+  width: 43px;
+  height: 43px;
 }
 .logo_2 {
-  position: absolute;
-  width: 118px;
-  height: 20px;
-  top: 22px;
-  left: 142px;
+  width: 147px;
+  height: 22px;
 }
 
-.elements{
-  display: inline;
-  .search{
-    position: relative;
-    top: -120px;
-    left: 1022px;
+.search{
     width: 44px;
     height: 44px;
     border-radius: 25px;
     .search_button{
-      position: absolute;
-      top: 0;
-      right: 0;
       border-radius: 25px;
       z-index: 50;
-    }
-    .search_icon{
-      position: absolute;
-      top: 14px;
-      left: 14px;
     }
   }
   .box_basket{
     width: 89px;
     height: 44px;
-    position: relative;
-    top: -164px;
-    left: 1085px;
     border-radius: 50px;
     z-index: 50;
-    .button_basket{
-      position: absolute;
-      top: 14px;
-      left: 14px;
-    }
-    .link_basket{
-      position: absolute;
-      top: 14px;
-      left: 50px;
-    }
   }
-}
+
 
 /* скрываем чекбокс */
 #menu__toggle {
@@ -207,8 +138,8 @@ section,
 .menu__btn {
   display: flex; /* используем flex для центрирования содержимого */
   position: relative; /* центрируем содержимое кнопки */
-  bottom: 34px;
-  left: 194px;
+  bottom: 0;
+  left: 0;
   width: 17px;
   height: 26px;
   cursor: pointer;
@@ -236,8 +167,8 @@ section,
 .menu__box {
   position: relative;
   visibility: visible;
-  top: -83px;
-  left: 220px;
+  top: 0;
+  left: 0;
   width: 560px;
   height: 40px;
   margin: 0;
@@ -248,7 +179,6 @@ section,
 .menu__item {
   position: relative;
   float: left;
-  padding: 12px 8px;
   color: #383838;
   font-family: $mainFont, sans-serif;
   font-size: 12px;
@@ -266,7 +196,7 @@ section,
       position: absolute;
       right: 50%;
       top: 0;
-      margin: 32px 3px 0 0;
+      margin: 20px 3px 0 0;
     }
   }
 }
@@ -290,17 +220,15 @@ section,
 /* header SLIDER */
 
 .all {
-  position: relative;
   width: 100%;
-  height: 540px;
-  z-index: 2;
+  height: 100%;
 }
 .header_slider {
   /*положение слайдера*/
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 1px;
-  height: 486px;
+  top: 0;
+  height: auto;
   & {
     /*центровка слайдера*/
     margin: 0 auto;
@@ -334,14 +262,15 @@ article img {
 
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+
 #switch1:checked ~ #controls label:nth-child(4),
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3) {
   background: url("/assets/img/arrow_left.png") no-repeat; /*заливка фона картинкой без повторений*/
   float: left;
-  margin: 65px 0 0 85px; /*сдвиг влево*/
-  display: block;
+  left: 0;
+  margin: 0 0 0 85px; /*сдвиг влево*/
   height: 48px;
   width: 48px;
 }
@@ -353,8 +282,8 @@ article img {
 #switch4:checked ~ #controls label:nth-child(1) {
   background: url("/assets/img/arrow_right.png") no-repeat; /*заливка фона картинкой без повторений*/
   float: right;
-  margin: 65px 46px 0 0; /*сдвиг вправо*/
-  display: block;
+  right: 0;
+  margin: 0 35px 0 0; /*сдвиг вправо*/
   height: 48px;
   width: 48px;
 }
@@ -408,7 +337,9 @@ a {
 
 #controls {
   /*положение блока всех управляющих элементов*/
-  margin: -25% 0 0 0;
+  position: absolute;
+  top: 50%;
+  margin: 0 0 0 0;
   width: 100%;
   height: 50px;
 }
@@ -420,12 +351,17 @@ a {
   width: 18px;
   height: 4px;
   background: #bbb;
+  margin-right: 6px;
 }
 
 #active {
   /*расположение блока с переключателями*/
-  margin: 227px 130px 0;
-  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 40px;
+  left: 144px;
+  margin:  0 0 0 0;
 }
 
 #active label:hover {
@@ -480,32 +416,33 @@ a {
 }
 
 .header_title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 158px;
+  padding-top: 163px;
   .style_title {
     font-size: 13px;
     font-weight: bold;
     color: #33343f;
     text-transform: uppercase;
-    line-height: 3.214;
+    line-height: 1.214;
     letter-spacing: 1px;
     word-spacing: 1px;
     text-align: left;
-    position: absolute;
-    left: 127px;
-    top: 114px;
+    margin-bottom: 6px;
   }
   .style_title_main {
-    font-size: 45px;
+    
     font-style: "Black";
     font-weight: 800;
     color: #33343f;
     text-transform: uppercase;
-    line-height: 3.214;
+    line-height: 0.8;
     letter-spacing: -1px;
     word-spacing: 2px;
     text-align: left;
-    position: absolute;
-    left: 126px;
-    top: 88px;
+    margin-bottom: 39px;
   }
   .price_title {
     font-size: 13px;
@@ -513,11 +450,8 @@ a {
     color: rgb(51, 52, 63);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 2.5;
+    line-height: 1.1;
     text-align: left;
-    position: absolute;
-    left: 128px;
-    top: 187px;
     letter-spacing: 0px;
     word-spacing: 0px;
     .new_price {
@@ -536,95 +470,49 @@ a {
 .button_buy {
   @include button_main;
   @include button_hover;
-  position: absolute;
-  left: 129px;
-  top: 300px;
-  & .buy {
-    position: absolute;
-    left: 32px;
-    top: 14px;
-  }
 }
 .button_collection {
   @include button_main;
   @include button_hover;
-  position: absolute;
   width: 139px;
-  left: 322px;
-  top: 299px;
-  & .collection {
-    position: absolute;
-    left: 29px;
-    top: 15px;
-  }
 }
 /* header SLIDER END*/
 /*compilation_all*/
-
-.compilation_1 {
+.compilation__title{
   position: absolute;
-  left: 94px;
+  left: 0;
   top: 0;
 }
-.compilation_2 {
-  position: absolute;
-  left: 374px;
-  top: 0;
-  width: 530px;
-  height: 282px;
-}
-.compilation_3 {
-  position: absolute;
-  float: right;
-  right: 98px;
-  top: 0;
-}
-.compilation_image2 {
-  width: 530px;
-  height: 282px;
-}
-
 .title {
   font-size: 24px;
   font-weight: 800;
   color: rgb(51, 52, 63);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
-  position: absolute;
-  left: 15px;
-  top: 151px;
+  
 }
 .text {
   font-size: 24px;
   font-weight: 800;
   color: #ff6401;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
-  position: absolute;
-  left: 96px;
-  top: 180px;
+  
 }
 
 .button_watch {
   @include button_main;
   @include button_hover;
   border-radius: 0px;
-  width: 132px;
-  height: 41px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: -1px;
-  position: absolute;
-  left: 60px;
-  top: 215px;
+  
   background-color: $default-color;
   color: $main-color;
   & .watch {
-    position: absolute;
-    left: 29px;
-    top: 12px;
     letter-spacing: 1px;
   }
 }
@@ -632,117 +520,53 @@ a {
 .box {
   position: absolute;
   background-color: #fff;
-  width: 474px;
-  height: 84px;
-  left: 28px;
+  width: 467px;
+  height: 95px;
+  left: 35px;
   top: 171px;
 }
 
 .compilation_2_title {
   & .text {
-    position: absolute;
-    left: 13px;
-    top: 18px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: none;
     letter-spacing: 2px;
   }
   & .title {
-    position: absolute;
-    left: 12px;
-    top: 38px;
-    font-size: 29px;
+   
+    font-size: 30px;
   }
 }
 
 .button_watch_all {
   @include button_main;
-  position: absolute;
-  left: 290px;
-  top: 21px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: $main-color;
   color: $default-color;
   & .watch_all {
-    position: absolute;
-    left: 35px;
-    top: 14px;
     word-spacing: -2px;
   }
 }
 
-.compilation_3 {
-  & .box {
-    position: absolute;
-    width: 196px;
-    height: 72px;
-    left: 29px;
-    top: 51px;
-  }
-}
+
 
 .compilation_3_title {
   & .text {
-    position: absolute;
-    left: 64px;
-    top: 13px;
     font-size: 12px;
     font-weight: 500;
     text-transform: none;
     letter-spacing: 2px;
   }
-  & .title {
-    position: absolute;
-    left: 21px;
-    top: 25px;
-    font-size: 29px;
-  }
 }
 /*compilation_all END*/
 /*Products*/
-
-.products_all {
-  width: auto;
-  height: 1100px;
-}
-.products_head {
-  position: relative;
-  top: 27px;
-  left: 0;
-  width: 100%;
-  height: 30px;
-}
-.title_products {
-  position: absolute;
-  width: 370px;
-  height: 30px;
-  left: 3px;
-  top: -4px;
-  & span {
-    font-size: 19px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    color: #33343f;
-  }
-}
-
-.box_menu {
-  position: absolute;
-  width: 426px;
-  height: 30px;
-  right: 81px;
-  top: -4px;
-}
-.menu__box_prodects {
-}
 .menu__item1 {
   position: relative;
-  float: left;
+  float: right;
   padding: 12px 13px;
   color: #383838;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0px;
   word-spacing: -1px;
@@ -761,111 +585,36 @@ a {
     }
   }
 }
-
-.products_block_one {
-  position: relative;
-  top: 25px;
-  left: 0;
-  width: 100%;
-  height: 471px;
-}
-.products_block_two {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 471px;
-  & .rectangles_discount {
-    @include rectangle;
-    background-color: #81bb6d;
-    position: absolute;
-    left: 14px;
-    top: 14px;
-    & .discount {
-      position: absolute;
-      left: 11px;
-      top: 6px;
-    }
-  }
-}
-
 .products_block {
-  position: relative;
-  float: left;
-  width: 253px;
-  height: 417px;
   background-color: #fff;
-  margin: 0 26px 2px 0;
-  top: 34px;
   border-radius: 5px;
 }
 
-.rectangles_new {
+.rectangles {
   @include rectangle;
-  position: absolute;
-  left: 14px;
-  top: 14px;
-  & .new {
-    position: absolute;
-    left: 6px;
-    top: 6px;
-  }
-}
-.rectangles_discount {
-  @include rectangle;
-  background-color: #81bb6d;
-  position: absolute;
-  left: 14px;
-  top: 44px;
-  & .discount {
-    position: absolute;
-    left: 11px;
-    top: 6px;
-  }
-}
-
-.rectangles_hit {
-  @include rectangle;
-  background-color: #ff4a4a;
-  position: absolute;
-  left: 14px;
-  top: 14px;
-  & .hit {
-    position: absolute;
-    left: 20px;
-    top: 6px;
-  }
 }
 
 .products_type {
-  font-size: 9px;
+  font-size: 12px;
   color: #ff6401;
   line-height: 1.2;
-  position: absolute;
-  left: 1px;
-  top: 309px;
   word-spacing: -1px;
   letter-spacing: 2.5px;
 }
 .products_text {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   color: #303030;
   line-height: 1.2;
-  position: absolute;
-  left: 1px;
-  top: 327px;
   word-spacing: 3px;
   letter-spacing: -0.2px;
+  
 }
 .products_price {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   color: #7f7f7f;
   line-height: 1.2;
-  position: absolute;
-  left: 2px;
-  top: 368px;
   word-spacing: 1px;
   & .price_old {
     text-decoration: line-through;
@@ -878,41 +627,28 @@ a {
 }
 
 .arni_store {
-  font-size: 9px;
+  font-size: 12px;
   text-decoration: underline;
   color: #b2b2b2;
   line-height: 1.2;
-  position: absolute;
-  left: 3px;
-  top: 394px;
   word-spacing: -1px;
   letter-spacing: 0.5px;
 }
 
 .products_like{
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
   border-radius: 50px;
-  position: relative;
-  top: 74px;
-  left: 218px;
- .button_like{
-    position: absolute;
-    top: 10px;
-    left: 9px;
-  }
+  float: right;
   &:hover{
     background-color: #e8650f;
   }
 }
 .next {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.2;
-  position: absolute;
   color: #979797;
-  left: 530px;
-  top: 1011px;
   letter-spacing: 0.1px;
   word-spacing: 1.5px;
 }
@@ -921,21 +657,15 @@ a {
   @include button_main;
   @include button_hover;
   border-radius: 6px;
-  width: 170px;
-  height: 44px;
-  font-size: 13px;
+  width: 212px;
+  height: 55px;
   font-weight: 700;
   letter-spacing: -1px;
-  position: absolute;
-  left: 555px;
-  top: 1050px;
   background-color: #ff6401;
   color: #fff;
+  text-align: center;
   & .Load_more {
-    font-size: 12px;
-    position: absolute;
-    left: 28px;
-    top: 16px;
+    font-size: 16px;
     letter-spacing: 0.9px;
     word-spacing: -1.5px;
     font-weight: 600;
@@ -944,218 +674,106 @@ a {
 /*Products END*/
 /*BANNER*/
 .banner {
-  position: relative;
-  top: 0;
-  left: 0px;
-  width: 1091px;
-  height: 259px;
+  width: 100%;
+  height: 100%;
   background-color: #767676;
-  background: url("/assets/img/banner.png") 1144px 300px;
+  background: url("/assets/img/banner.png") 100% 100% no-repeat;
   border-radius: 11px;
 }
 
 .banner_title {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   line-height: 1.2;
-  position: absolute;
-  left: 32px;
-  top: 49px;
   letter-spacing: -1px;
   word-spacing: 1.3px;
-  width: 644px;
+  width: 69%;
 }
 .banner_text {
-  font-size: 13px;
+  font-size: 16px;
   color: #686865;
   line-height: 1.2;
-  position: absolute;
-  left: 33px;
-  top: 126px;
-  width: 559px;
-  height: 51px;
+  width: 72%;
   letter-spacing: 0px;
   word-spacing: 0px;
 }
 .banner_price {
-  font-size: 24px;
+  font-size: 30px;
   color: #ff6401;
   font-weight: 700;
   text-decoration: underline;
   text-transform: uppercase;
   line-height: 1.2;
-  position: absolute;
-  left: 32px;
-  top: 197px;
 }
 
 /*BANNER END*/
 /*SUPPLIERS*/
-.suppliers {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 288px;
-}
-.suppliers_head {
-  position: absolute;
-  top: 62px;
-  left: 0;
-  width: 100%;
-  height: 30px;
-}
+
 .suppliers_head_title {
-  font-size: 21px;
+  font-size: 26px;
   color: rgb(51, 52, 63);
   font-weight: bold;
   line-height: 1.2;
-  position: absolute;
-  left: 2px;
-  top: 2px;
   letter-spacing: -0.2px;
   word-spacing: 1px;
 }
 
 .suppliers_watch_all {
-  font-size: 11px;
+  font-size: 14px;
   color: rgb(45, 44, 52);
   line-height: 1.2;
-  position: absolute;
-  right: 116px;
-  top: 13px;
   letter-spacing: 0.1px;
   word-spacing: 0px;
 }
 .watch_all_img {
-  position: absolute;
-  right: -19px;
-  top: 3px;
-  width: 4px;
-  height: 10px;
-}
-.suppliers_block {
-  position: relative;
-  float: left;
-  width: 158px;
-  height: 140px;
-  background-color: #fff;
-  margin: 0 28px 28px 0;
-  top: 120px;
-  border-radius: 3px;
-}
-.suppliers_logo {
-  @include suppliers_logo;
+  width: 6px;
+  height: 11px;
 }
 
-.arniro {
-  @include suppliers_logo;
-  background: url("/assets/img/ARNIRO.png") no-repeat;
-  background-size: 90px 16px;
-  background-position-x: 52%;
-  background-position-y: 51%;
-  background-color: #20243a;
-}
-.aliya {
-  @include suppliers_logo;
-  background: url("/assets/img/logo-Aliya.png") no-repeat;
-  background-size: 158px 90px;
-  background-position-x: 52%;
-  background-position-y: 51%;
-  background-color: #20243a;
-}
-
-.red_mouse {
-  @include suppliers_logo;
-  background: url("/assets/img/RED MOUSE.png") no-repeat;
-  background-size: 89px 45px;
-  background-position-x: 49%;
-  background-position-y: 51%;
-  background-color: #e73232;
-}
-
-.bird {
-  @include suppliers_logo;
-  background: url("/assets/img/suppliers6.png") no-repeat;
-  background-size: 120px 19px;
-  background-position-x: 53%;
-  background-position-y: 50%;
-  background-color: #000;
-}
 .suppliers_title {
-  font-size: 13px;
+  font-size: 16px;
   color: rgb(48, 48, 48);
   line-height: 1.2;
-  position: absolute;
-  left: 1px;
-  top: 103px;
   letter-spacing: 0.1px;
   word-spacing: -1px;
 }
 .suppliers_link {
-  font-size: 9px;
+  font-size: 12px;
   color: rgb(178, 178, 178);
   text-decoration: underline;
   line-height: 1.2;
-  position: absolute;
-  left: 3px;
-  top: 124px;
   letter-spacing: 0.4px;
   word-spacing: 0px;
 }
 /*SUPPLIERS END*/
 /*feedback form*/
-.sub {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 197px;
-}
 .sub_box {
   background-color: #f0f0f0;
-  background: url("/assets/img/mail.png") 1420px 202px;
-  width: 630px;
-  height: 176px;
-  position: absolute;
-  left: 230px;
-  top: 2px;
+  background: url("/assets/img/mail.png") 100% 100% no-repeat;
   border-radius: 3px;
 }
 .sub_title {
-  font-size: 20px;
+  font-size: 24px;
   color: #33343f;
   line-height: 1.2;
-  position: absolute;
-  left: 33px;
-  top: 25px;
 }
 .sub_text {
-  font-size: 11px;
+  font-size: 14px;
   color: rgb(106, 107, 119);
   line-height: 1.2;
-  position: absolute;
-  left: 35px;
-  top: 53px;
   word-spacing: 0.9px;
 }
 .email {
   border-radius: 9px;
   background-color: #fff;
-  position: absolute;
-  left: 36px;
-  top: 88px;
   width: 558px;
   height: 61px;
   & .expanded {
-    font-size: 13px;
+    font-size: 16px;
     color: #afafb5;
     line-height: 1.2;
-    position: absolute;
-    left: 28px;
-    top: 24px;
   }
 }
 .button_send {
@@ -1163,19 +781,12 @@ a {
   border-radius: 9px;
   width: 180px;
   height: 61px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: -1px;
-  position: absolute;
-  left: 414px;
-  top: 88px;
   background-color: #ff6401;
   cursor: pointer;
   & .send {
-    font-size: 12px;
-    position: absolute;
-    left: 46px;
-    top: 23px;
     letter-spacing: 0.5px;
     word-spacing: 0px;
     font-weight: 500;
@@ -1188,158 +799,10 @@ a {
 /*FOOTER*/
 .footer {
   background-color: #f0f0f0;
-  width: 100%;
-  height: 207px;
-  position: relative;
-  left: 0;
-  top: -12px;
 }
-.service {
-  & .footer_title {
-    position: absolute;
-    left: 94px;
-    top: 42px;
-  }
-  & .link1 {
-    position: absolute;
-    left: 94px;
-    top: 65px;
-  }
-  & .link2 {
-    position: absolute;
-    left: 94px;
-    top: 85px;
-  }
-  & .link3 {
-    position: absolute;
-    left: 94px;
-    top: 105px;
-  }
-  & .link4 {
-    position: absolute;
-    left: 94px;
-    top: 125px;
-  }
-  & .link5 {
-    position: absolute;
-    left: 94px;
-    top: 145px;
-  }
-  & .link6 {
-    position: absolute;
-    left: 94px;
-    top: 165px;
-  }
-}
-.all_caravan {
-  & .footer_title {
-    position: absolute;
-    left: 312px;
-    top: 42px;
-  }
-  & .link1 {
-    position: absolute;
-    left: 312px;
-    top: 65px;
-  }
-  & .link2 {
-    position: absolute;
-    left: 312px;
-    top: 85px;
-  }
-  & .link3 {
-    position: absolute;
-    left: 312px;
-    top: 105px;
-  }
-  & .link4 {
-    position: absolute;
-    left: 312px;
-    top: 125px;
-  }
-  & .link5 {
-    position: absolute;
-    left: 312px;
-    top: 145px;
-  }
-  & .link6 {
-    position: absolute;
-    left: 312px;
-    top: 165px;
-  }
-}
-.contact {
-  & .footer_title {
-    position: absolute;
-    left: 822px;
-    top: 41px;
-  }
-  & .link1 {
-    position: absolute;
-    left: 822px;
-    top: 65px;
-    & span {
-      width: 139px;
-      height: 37px;
-      line-height: 1.3;
-      position: absolute;
-      left: 62px;
-      top: 5px;
-    }
-  }
-  & .link2 {
-    width: 139px;
-    height: 37px;
-    position: absolute;
-    left: 822px;
-    top: 100px;
-    & span {
-      width: 120px;
-      height: 37px;
-      line-height: 1.2;
-      position: absolute;
-      left: 62px;
-      top: 5px;
-    }
-  }
-  & .link3 {
-    position: absolute;
-    left: 822px;
-    top: 142px;
-    & span {
-      width: 139px;
-      height: 37px;
-      line-height: 1.3;
-      position: absolute;
-      left: 62px;
-      top: 5px;
-    }
-  }
-}
-.social_network {
-  & .footer_title {
-    position: absolute;
-    left: 1080px;
-    top: 41px;
-  }
-  & .link1 {
-    position: absolute;
-    left: 1080px;
-    top: 65px;
-  }
-  & .link2 {
-    position: absolute;
-    left: 1080px;
-    top: 85px;
-  }
-  & .link3 {
-    position: absolute;
-    left: 1080px;
-    top: 105px;
-  }
-}
+
 .footer_title {
-  font-size: 12px;
+  font-size: 16px;
   color: rgb(55, 55, 55);
   line-height: 1.2;
   word-spacing: 0;
@@ -1347,27 +810,25 @@ a {
   font-weight: 600;
 }
 .footer_link {
-  font-size: 9px;
+  font-size: 12px;
   color: rgb(143, 143, 143);
-  line-height: 2.083;
+  line-height: 1.083;
   word-spacing: 0;
   letter-spacing: 0.2px;
   font-weight: 600;
+  padding-bottom: 16px;
 }
 .footer_text {
-  font-size: 9px;
+  font-size: 12px;
   color: rgb(143, 143, 143);
-  line-height: 2.083;
+  line-height: 1.083;
   word-spacing: 0;
   letter-spacing: 0.2px;
   font-weight: 600;
+  padding-bottom: 16px;
 }
 
-.footer_logo {
-  position: absolute;
-  left: 558px;
-  top: 42px;
-}
+
 .footer_img {
   width: 163px;
   height: 136px;
@@ -1379,19 +840,13 @@ a {
   border: 2px solid #8d8d8d;
   width: 100px;
   height: 37px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: -1px;
-  position: absolute;
-  left: 1082px;
-  top: 144px;
   background-color: #f0f0f0;
   color: #373737;
   & .social {
     font-size: 10px;
-    position: absolute;
-    left: 15px;
-    top: 10px;
     letter-spacing: 0.9px;
     word-spacing: -1.5px;
     font-weight: 600;
@@ -1407,9 +862,7 @@ a {
 }
 
 .footer_open{
-  position: relative;
-  top: -12px;
-  left: 0;
+  
 }
 // Modules:
 // example: @import "modules/my-module.scss";

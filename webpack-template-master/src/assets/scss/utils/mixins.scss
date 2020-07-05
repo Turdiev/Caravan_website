@@ -58,30 +58,12 @@
 @mixin rectangle {
     border-radius: 5px;
     background-color: rgb(255, 100, 1);
-    position: absolute;
-    left: 14px;
-    top: 13px;
-    width: 58px;
-    height: 25px;
-    span{
-      font-size: 9px;
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-      line-height: 1.2; 
-      position: absolute;
-      left: 10px;
-      top: 10px;
-    }
+    width: 73px;
+    height: 30px;
 }
 
 @mixin suppliers_logo {
-  background: url("/assets/img/suppliers1.png") no-repeat ;
-  width: 158px;
-  height: 90px;
-  background-size: 53px 47px;
-  background-position-x: 52%;
-  background-position-y: 47%;
+  background: url("/assets/img/suppliers1.png") 100% 100% no-repeat ;
   background-color: #ececec;
   border-radius: 6px;
 }
